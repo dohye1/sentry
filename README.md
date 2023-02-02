@@ -1,13 +1,7 @@
-# Sentry에 대해 공부해보기
+# Sentry
 
-## Sentry란?
+### [frontend tutorial](https://docs.sentry.io/product/sentry-basics/integrate-frontend/)을 보고 만든 프로젝트
 
-> error monitoring tool
-
-에러가 발생할때, sentry에 에러를 리포트한다.
-
-그래서 애플리케이션에서 발생한 에러를 모니터링할 수 있다.
-
-센트리에 대한 공부내용은 블로그에 정리해보겠습니당
-
-[저의 블로그](https://dohye1.tistory.com/)에 놀러오세요 🥹
+- 문서에서 알려준 방식과 조금 다름
+- 문서에서 알려준 코드는 몇년전에 관리되어서 최신 라이브러리와 버전이 맞지않아, 라이브러리의 버전을 올려서 재구성함
+- `Sentry.init` 코드도 조금 다름
