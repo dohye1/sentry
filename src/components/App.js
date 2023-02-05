@@ -3,7 +3,7 @@ import "./App.css";
 import wrenchImg from "../assets/wrench.png";
 import nailsImg from "../assets/nails.png";
 import hammerImg from "../assets/hammer.png";
-import * as Sentry from "@sentry/browser";
+import * as Sentry from "@sentry/react";
 
 // const request = require("request");
 
@@ -90,7 +90,7 @@ class App extends Component {
   }
 
   checkout() {
-    this.hyewonTest();
+    this.errorTest();
 
     /*
       POST request to /checkout endpoint.
