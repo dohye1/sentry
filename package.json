@@ -17,6 +17,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build && make setup_release",
     "deploy": "serve -s build",
     "start": "REACT_APP_RELEASE_VERSION=`sentry-cli releases propose-version` react-scripts start",
     "build": "REACT_APP_RELEASE_VERSION=`sentry-cli releases propose-version` react-scripts build",
