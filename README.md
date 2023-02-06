@@ -8,9 +8,8 @@
 
 # MakeFile 생성
 
-root경로에 `Makefile`이라는 이름의 파일을 생성해줘여한다.
-
-(ㅜㅠ 이 파일땜에 삽질겁나함ㅠㅜㅠㅜ)
+~root경로에~ `Makefile`이라는 이름의 파일을 생성해줘여한다.
+> 꼭 root경로는 아니어도 된다고함..!
 
 [환경변수 찾는곳](https://docs.sentry.io/product/sentry-basics/integrate-frontend/upload-source-maps/#step-1-prepare-the-build-environment)
 
@@ -27,7 +26,7 @@ REACT_APP_RELEASE_VERSION=`sentry-cli releases propose-version`
 setup_release: create_release upload_sourcemaps associate_commits
 
 create_release:
-		sentry-cli releases --auth-token ${SENTRY_AUTH_TOKEN} -o $(SENTRY_ORG) new -p $(SENTRY_PROJECT) $(REACT_APP_RELEASE_VERSION) --log-level=debug
+		sentry-cli releases --auth-token ${SENTRY_AUTH_TOKEN} -o $(SENTRY_ORG) new -p $(SENTRY_PROJECT) $(REACT_APP_RELEASE_VERSION)
 
 upload_sourcemaps:
 		sentry-cli releases --auth-token ${SENTRY_AUTH_TOKEN} -o $(SENTRY_ORG) -p $(SENTRY_PROJECT) files $(REACT_APP_RELEASE_VERSION) \
