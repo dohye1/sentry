@@ -43,7 +43,7 @@ associate_commits:
 
 - [Sentry frontend tutorial](https://docs.sentry.io/product/sentry-basics/integrate-frontend/upload-source-maps/#step-1-prepare-the-build-environment)에서 token의 permission을 아래의 이미지처럼 설정해주라고 한다.
 
-<img width="692" alt="Screenshot 2023-02-06 at 4 45 44 PM" src="https://docs.sentry.io/static/b639f3c7b2715d9185616c53a492c66e/c1b63/upload-source-maps-016.png">
+<img width="692" alt="Screenshot 2023-02-06 at 4 45 44 PM" src="https://user-images.githubusercontent.com/64346737/217119202-1b4e0b94-fb14-4299-a589-8d7462ad9360.png">
 
 왜냐하면 해당 토큰을 사용해서
 
